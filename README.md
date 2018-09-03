@@ -15,7 +15,9 @@ The code in this repository is heavily copied from [Detectron](https://github.co
   <p>Example Mask R-CNN output.</p>
 </div>
 
-Thinking that the problem of object loss should cause by the information loss and the insufficient information that detector received. Thus,RMCNN use some physical concepts to find the best way to improve the detecting work. 
+Thinking that the problem of object loss should cause by the information loss and the insufficient information that detector received. Thus,RMCNN uses some physical concepts to find the best way to improve the detecting work. 
+
+Due to the limitation of the device, this repository using image size with [800,600], the detatil is defined in config file.
 
 ## Installation
 
@@ -46,9 +48,9 @@ python tools/test_net.py \
     NUM_GPUS N
 ```
 
-## Training a Model with Detectron
-
-This is a tiny tutorial showing how to train a model on COCO. The model will be an end-to-end trained Faster R-CNN using a ResNet-50-FPN backbone. For the purpose of this tutorial, we'll use a short training schedule and a small input image size so that training and inference will be relatively fast. As a result, the box AP on COCO will be relatively low compared to our [baselines](MODEL_ZOO.md). This example is provided for instructive purposes only (i.e., not for comparing against publications).
+## Training a Model with RMCNN
+A tiny tutorial showing how to train model on MS COCO.
+The model here is an end-to-end trained RMCNN, after trainning, the box and mask AP will show at the end using [MS COCO Metrics](http://cocodataset.org/#detection-eval)
 
 #### 1. Training with 1 GPU
 
@@ -71,17 +73,4 @@ python tools/train_net.py \
 
 Detectron is released under the [Apache 2.0 license](https://github.com/facebookresearch/detectron/blob/master/LICENSE). See the [NOTICE](https://github.com/facebookresearch/detectron/blob/master/NOTICE) file for additional details.
 
-## Citing Detectron
-
-If you use Detectron in your research or wish to refer to the baseline results published in the [Model Zoo](MODEL_ZOO.md), please use the following BibTeX entry.
-
-```
-@misc{Detectron2018,
-  author =       {Ross Girshick and Ilija Radosavovic and Georgia Gkioxari and
-                  Piotr Doll\'{a}r and Kaiming He},
-  title =        {Detectron},
-  howpublished = {\url{https://github.com/facebookresearch/detectron}},
-  year =         {2018}
-}
-```
 
