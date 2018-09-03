@@ -115,7 +115,8 @@ def main(args):
 
     for i, im_name in enumerate(im_list):
         out_name = os.path.join(
-            args.output_dir, '{}'.format(os.path.basename(im_name) + '.pdf')
+#            args.output_dir, '{}'.format(os.path.basename(im_name) + '.pdf')
+	    args.output_dir, '{}'.format(os.path.basename(im_name))
         )
         logger.info('Processing {} -> {}'.format(im_name, out_name))
         im = cv2.imread(im_name)
