@@ -77,8 +77,10 @@ python tools/train_net.py \
     OUTPUT_DIR detectron-output
 ```
 
+
 ## Main Results
 
+### Box
 <table><tbody>
 <!-- TABLE HEADER -->
 <th valign="bottom"><sup><sub>Model</sub></sup></th>
@@ -89,20 +91,45 @@ python tools/train_net.py \
 <!-- TABLE BODY -->
 <tr>
 <td align="left"><sup><sub>Mask RCNN</sub></sup></td>
-<td align="left"><sup><sub>23.2</sub></sup></td>
-<td align="left"><sup><sub>7.7</sub></sup></td>
-<td align="left"><sup><sub>24.5</sub></sup></td>
-<td align="left"><sup><sub>36.7</sub></sup></td>
+<td align="left"><sup><sub>32.9</sub></sup></td>
+<td align="left"><sup><sub>16.8</sub></sup></td>
+<td align="left"><sup><sub>35.8</sub></sup></td>
+<td align="left"><sup><sub>45.4</sub></sup></td>
 </tr>
   
 <tr>
 <td align="left"><sup><sub>RMCNN</sub></sup></td>
-<td align="left"><sup><sub>24.1</sub></sup></td>
-<td align="left"><sup><sub>7.9</sub></sup></td>
-<td align="left"><sup><sub>25.1</sub></sup></td>
-<td align="left"><sup><sub>38.7</sub></sup></td>
+<td align="left"><sup><sub>34.0</sub></sup></td>
+<td align="left"><sup><sub>17.3</sub></sup></td>
+<td align="left"><sup><sub>36.8</sub></sup></td>
+<td align="left"><sup><sub>47.2</sub></sup></td>
 </tr>
 
+
+### Mask
+<table><tbody>
+<!-- TABLE HEADER -->
+<th valign="bottom"><sup><sub>Model</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(small)</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(medium)</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(large)</sub></sup></th>
+<!-- TABLE BODY -->
+<tr>
+<td align="left"><sup><sub>Mask RCNN</sub></sup></td>
+<td align="left"><sup><sub>30.0</sub></sup></td>
+<td align="left"><sup><sub>11.1</sub></sup></td>
+<td align="left"><sup><sub>32.0</sub></sup></td>
+<td align="left"><sup><sub>47.3</sub></sup></td>
+</tr>
+  
+<tr>
+<td align="left"><sup><sub>RMCNN</sub></sup></td>
+<td align="left"><sup><sub>31.0</sub></sup></td>
+<td align="left"><sup><sub>11.6</sub></sup></td>
+<td align="left"><sup><sub>32.9</sub></sup></td>
+<td align="left"><sup><sub>48.1</sub></sup></td>
+</tr>
 
 
 ## License
