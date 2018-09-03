@@ -11,13 +11,22 @@ The code in this repository is heavily copied from [Detectron](https://github.co
 ## Introduction
 
 <div align="center">
-  <img src="demo/output/33823288584_1d21cf0a26_k_example_output.jpg" width="700px" />
-  <p>Example Mask R-CNN output.</p>
+  <img src="demo_/output/33823288584_1d21cf0a26_k_example_output.jpg" width="700px" />
+  <p>Example RMCNN output.</p>
 </div>
 
 Thinking that the problem of object loss should cause by the information loss and the insufficient information that detector received. Thus,RMCNN uses some physical concepts to find the best way to improve the detecting work. 
 
 Due to the limitation of the device, this repository using image size with [800,600], the detatil is defined in config file.
+
+## Architecture
+
+<div align="center">
+  <img src="" width="700px" />
+  <p>Architecture of RMCNN.</p>
+</div>
+
+
 
 ## Installation
 
