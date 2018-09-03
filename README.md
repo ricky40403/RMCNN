@@ -4,7 +4,7 @@ At FAIR, Detectron has enabled numerous research projects, including: [Feature P
 
 And RMCNN is basely on Mask RCNN to make the improvement.
 
-The code in this repository is heavily copied from [Detectron](https://github.com/facebookresearch/Detectron) and modify the artecture.
+The code in this repository is heavily copied from [Detectron](https://github.com/facebookresearch/Detectron) and modified.
 
 
 
