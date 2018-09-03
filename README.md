@@ -63,7 +63,7 @@ python tools/train_net.py \
 ### 2. Multi-GPU Training
 ```
 python tools/train_net.py \
-	--multi-gpu-testing \
+    --multi-gpu-testing \
     --cfg configs/config.yaml \
     OUTPUT_DIR detectron-output
 ```
