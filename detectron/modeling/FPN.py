@@ -165,8 +165,7 @@ def add_fpn(model, fpn_level_info):
 			fpn_dim_lateral[i],       
 			fpn_dim       
 		)
-		print(thin_output_blobs[i])
-	print(thin_output_blobs)
+
 	# For the coarsest backbone level: 1x1 conv only seeds recursion
 	if cfg.FPN.USE_GN:
 		# use GroupNorm
