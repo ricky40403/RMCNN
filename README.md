@@ -77,6 +77,33 @@ python tools/train_net.py \
     OUTPUT_DIR detectron-output
 ```
 
+## Main Results
+
+<table><tbody>
+<!-- TABLE HEADER -->
+<th valign="bottom"><sup><sub>Model</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(small)</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(medium)</sub></sup></th>
+<th valign="bottom"><sup><sub>mAP(large)</sub></sup></th>
+<!-- TABLE BODY -->
+<tr>
+<td align="left"><sup><sub>Mask RCNN</sub></sup></td>
+<td align="left"><sup><sub>23.2</sub></sup></td>
+<td align="left"><sup><sub>7.7</sub></sup></td>
+<td align="left"><sup><sub>24.5</sub></sup></td>
+<td align="left"><sup><sub>36.7</sub></sup></td>
+</tr>
+  
+<tr>
+<td align="left"><sup><sub>RMCNN</sub></sup></td>
+<td align="left"><sup><sub>24.1</sub></sup></td>
+<td align="left"><sup><sub>7.9</sub></sup></td>
+<td align="left"><sup><sub>25.1</sub></sup></td>
+<td align="left"><sup><sub>38.7</sub></sup></td>
+</tr>
+
+
 
 ## License
 
