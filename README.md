@@ -82,6 +82,7 @@ python tools/train_net.py \
 This experiments are under the following conditions:
 - image size : [600, 800]
 - GPU number : 1
+- batch size per GPU : 2
 - WEIGHT_DECAY: 0.0001
 - BASE_LR: 0.0025
 - MAX_ITER: 180000
@@ -142,6 +143,9 @@ This experiments are under the following conditions:
 </tr>
 <!-- END RPN TABLE -->
 </tbody></table>
+
+By the limitation of resource, I do not test on multi-gpu and large image size and large batch size.
+Maybe someday.
 
 ## License
 
