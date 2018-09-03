@@ -165,8 +165,6 @@ def add_fpn(model, fpn_level_info):
 			fpn_dim_lateral[i],       
 			fpn_dim       
 		)
-		print(thin_output_blobs[i])
-	print(thin_output_blobs)
 	# For the coarsest backbone level: 1x1 conv only seeds recursion
 	if cfg.FPN.USE_GN:
 		# use GroupNorm
@@ -238,7 +236,7 @@ def add_fpn(model, fpn_level_info):
 		if cfg.FPN.USE_GN:
 			# use GroupNorm
 			fpn_blob = model.ConvGN(
-				dpa_output_blobs[i],
+				wid_output_blobs[i],
 				'fpn_{}'.format(fpn_level_info.blobs[i]),
 				dim_in=fpn_dim,
 				dim_out=fpn_dim,
@@ -279,6 +277,11 @@ def add_fpn(model, fpn_level_info):
 		spatial_scales.insert(0, spatial_scales[0] * 0.5)
 
 	# Coarser FPN levels introduced for RetinaNet
+	print("\n")
+	print("\n")
+	print(cfg.EXTRA_CONV_LEVELS )
+	print("\n")
+	print("\n")
 	if cfg.FPN.EXTRA_CONV_LEVELS and max_level > HIGHEST_BACKBONE_LVL:
 		fpn_blob = fpn_level_info.blobs[0]
 		dim_in = fpn_level_info.dims[0]
