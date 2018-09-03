@@ -11,7 +11,7 @@ The code in this repository is heavily copied from [Detectron](https://github.co
 ## Introduction
 
 <div align="center">
-  <img src="demo_imgs/outputs/17790319373_bd19b24cfc_k.jpg.jpg" width="700px" />
+  <img src="demo_imgs/outputs/33823288584_1d21cf0a26_k.jpg.jpg" width="700px" />
   <p>Example RMCNN output.</p>
 </div>
 
@@ -22,7 +22,7 @@ Due to the limitation of the device, this repository using image size with [800,
 ## Architecture
 
 <div align="center">
-  <img src="" width="700px" />
+  <img src="Architecture.png" width="700px" />
   <p>Architecture of RMCNN.</p>
 </div>
 
