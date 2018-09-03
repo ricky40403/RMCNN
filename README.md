@@ -11,7 +11,7 @@ The code in this repository is heavily copied from [Detectron](https://github.co
 ## Introduction
 
 <div align="center">
-  <img src="demo_imgs/output/33823288584_1d21cf0a26_k_example_output.jpg" width="700px" />
+  <img src="demo_imgs/outputs/33823288584_1d21cf0a26_k_example_output.jpg" width="700px" />
   <p>Example RMCNN output.</p>
 </div>
 
