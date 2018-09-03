@@ -80,15 +80,15 @@ python tools/train_net.py \
 
 ## Main Results
 This experiments are under the following conditions:
-- image size : [600, 800]
+- Image size : [600, 800]
 - GPU number : 1
-- batch size per GPU : 2
+- Batch size per GPU : 2
 - WEIGHT_DECAY: 0.0001
 - BASE_LR: 0.0025
 - MAX_ITER: 180000
 - STEPS: [0, 120000, 160000]
 - Training dataset : 2017_train
-- testing dataset : 2017_val
+- Testing dataset : 2017_val
 
 ### Box
 <table><tbody>
