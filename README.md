@@ -79,6 +79,15 @@ python tools/train_net.py \
 
 
 ## Main Results
+This experiments are under the following conditions:
+- image size : [600, 800]
+- GPU number : 1
+- WEIGHT_DECAY: 0.0001
+- BASE_LR: 0.0025
+- MAX_ITER: 180000
+- STEPS: [0, 120000, 160000]
+- Training dataset : 2017_train
+- testing dataset : 2017_val
 
 ### Box
 <table><tbody>
@@ -104,7 +113,8 @@ python tools/train_net.py \
 <td align="left"><sup><sub>36.8</sub></sup></td>
 <td align="left"><sup><sub>47.2</sub></sup></td>
 </tr>
-
+<!-- END RPN TABLE -->
+</tbody></table>
 
 ### Mask
 <table><tbody>
@@ -130,7 +140,8 @@ python tools/train_net.py \
 <td align="left"><sup><sub>32.9</sub></sup></td>
 <td align="left"><sup><sub>48.1</sub></sup></td>
 </tr>
-
+<!-- END RPN TABLE -->
+</tbody></table>
 
 ## License
 
